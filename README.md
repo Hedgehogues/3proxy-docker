@@ -1,5 +1,7 @@
 # 3proxy-tutorial for Debian 9
 
+[3proxy](https://github.com/z3apa3a/3proxy)
+
 Befire installing, you nned update and upgrade system:
 
     user@debian9:~# sudo apt-get update && sudo apt-get upgrade
