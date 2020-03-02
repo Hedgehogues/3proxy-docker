@@ -53,6 +53,7 @@ Press `Ctrl + x` and Enter to save the changes.
 Makelog
 
 > make[2]: Leaving directory '/opt/proxy/3proxy-0.8.12/src/plugins/TransparentPlugin'
+
 > make[1]: Leaving directory '/opt/proxy/3proxy-0.8.12/src'
 
 No errors, continue.
@@ -83,35 +84,61 @@ No errors, continue.
 `3proxy.conf`:
 
 > daemon
+>
 > pidfile /home/joke/proxy/3proxy.pid
+>
 > nserver 8.8.8.8
+>
 > nscache 65536
+>
 > users tester:CL:1234
+>
 > timeouts 1 5 30 60 180 1800 16 60
+>
 > log /home/joke/proxy/logs/3proxy.log D
+>
 > logformat "- +_L%t.%. %N.%p %E %U %C:%c %R:%r %O %I %h %T"
+>
 > rotate 3
+>
 > auth strong
+>
 > flush
+>
 > allow tester
+>
 > socks -p3128
+>
 > proxy -p8080
   
 If you want set no auth, you need another config (`auth none`):
 
 > daemon
+>
 > pidfile /home/joke/proxy/3proxy.pid
+>
 > nserver 8.8.8.8
+>
 > nscache 65536
+>
 > users tester:CL:1234
+>
 > timeouts 1 5 30 60 180 1800 16 60
+>
 > log /home/joke/proxy/logs/3proxy.log D
+>
 > logformat "- +_L%t.%. %N.%p %E %U %C:%c %R:%r %O %I %h %T"
+>
 > rotate 3
+>
 > auth none
+>
 > flush
+>
 > allow tester
+>
 > socks -p3128
+>
 > proxy -p8080
 
 To save, press **Ctrl + Z**
@@ -132,11 +159,17 @@ To save, press **Ctrl + Z**
 
 `netstat log`
 > Active Internet connections (only servers)
+>
 > Proto Recv-Q Send-Q Local Address Foreign Address State PID / Program name
+>
 > tcp 0 0 0.0.0.0:8080 0.0.0.0:* LISTEN 504 / 3proxy
+>
 > tcp 0 0 0.0.0.0:22 0.0.0.0:* LISTEN 338 / sshd
+>
 > tcp 0 0 0.0.0.0lla128 0.0.0.0:* LISTEN 504 / 3proxy
+>
 > tcp6 0 0 ::: 22 ::: * LISTEN 338 / sshd
+>
 > udp 0 0 0.0.0.0:68 0.0.0.0:* 352 / dhclient
 
 As it was written in the config, the web proxy listens to port **8080**, and the Socks5 proxy listens to **3128**.
@@ -162,6 +195,7 @@ There should be a message about installing a new crontab.
 4.19. After checking the proxy after rebooting, you can see the logs. This completes the proxy setup.
 
 > 1542573996.018 PROXY.8080 00000 tester 192.168.23.10:50915 217.12.15.54:443 1193 6939 0 CONNECT_ads.yahoo.com:443_HTTP/1.1
+>
 > 1542574289.634 SOCK5.3128 00000 tester 192.168.23.10:51193 54.192.13.69:443 0 0 0 CONNECT_normandy.cdn.mozilla.net:443
 
 
