@@ -201,5 +201,5 @@ There should be a message about installing a new crontab.
 
 links: 
 
-[1]: https://habr.com/ru/post/460469/
-[2]: https://github.com/z3APA3A/3proxy/wiki/3proxy-%D0%B4%D0%BB%D1%8F-%D1%87%D0%B0%D0%B9%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2
+* https://habr.com/ru/post/460469/
+* https://github.com/z3APA3A/3proxy/wiki/3proxy-%D0%B4%D0%BB%D1%8F-%D1%87%D0%B0%D0%B9%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2
