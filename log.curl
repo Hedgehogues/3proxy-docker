@@ -1,0 +1,51 @@
+== Info: Expire in 0 ms for 6 (transfer 0x55c1686adf40)
+== Info: Uses proxy env variable no_proxy == 'localhost,127.0.0.0/8,::1'
+== Info:   Trying 2.3.4.5...
+== Info: TCP_NODELAY set
+== Info: Expire in 200 ms for 4 (transfer 0x55c1686adf40)
+== Info: Connected to 2.3.4.5 (2.3.4.5) port 3128 (#0)
+=> Send header, 135 bytes (0x87)
+0000: 47 45 54 20 68 74 74 70 3a 2f 2f 38 34 2e 32 30 GET http://1.2
+0010: 31 2e 31 37 31 2e 38 3a 38 30 38 30 2f 20 48 54 .3.4:8080/ HT
+0020: 54 50 2f 31 2e 31 0d 0a 48 6f 73 74 3a 20 38 34 TP/1.1..Host: 1
+0030: 2e 32 30 31 2e 31 37 31 2e 38 3a 38 30 38 30 0d .2.3.4:8080.
+0040: 0a 55 73 65 72 2d 41 67 65 6e 74 3a 20 63 75 72 .User-Agent: cur
+0050: 6c 2f 37 2e 36 34 2e 30 0d 0a 41 63 63 65 70 74 l/7.64.0..Accept
+0060: 3a 20 2a 2f 2a 0d 0a 50 72 6f 78 79 2d 43 6f 6e : */*..Proxy-Con
+0070: 6e 65 63 74 69 6f 6e 3a 20 4b 65 65 70 2d 41 6c nection: Keep-Al
+0080: 69 76 65 0d 0a 0d 0a                            ive....
+<= Recv header, 17 bytes (0x11)
+0000: 48 54 54 50 2f 31 2e 31 20 32 30 30 20 4f 4b 0d HTTP/1.1 200 OK.
+0010: 0a                                              .
+<= Recv header, 37 bytes (0x25)
+0000: 44 61 74 65 3a 20 57 65 64 2c 20 30 34 20 4d 61 Date: Wed, 04 Ma
+0010: 72 20 32 30 32 30 20 30 37 3a 34 34 3a 34 34 20 r 2020 07:44:44 
+0020: 47 4d 54 0d 0a                                  GMT..
+<= Recv header, 40 bytes (0x28)
+0000: 43 6f 6e 74 65 6e 74 2d 54 79 70 65 3a 20 74 65 Content-Type: te
+0010: 78 74 2f 68 74 6d 6c 3b 20 63 68 61 72 73 65 74 xt/html; charset
+0020: 3d 75 74 66 2d 38 0d 0a                         =utf-8..
+<= Recv header, 51 bytes (0x33)
+0000: 58 2d 43 61 63 68 65 3a 20 4d 49 53 53 20 66 72 X-Cache: MISS fr
+0010: 6f 6d 20 6d 61 72 6b 65 74 2d 72 61 64 61 72 2d om market-radar-
+0020: 65 78 70 65 72 69 6d 65 6e 74 73 2d 70 72 6f 78 experiments-prox
+0030: 79 0d 0a                                        y..
+<= Recv header, 62 bytes (0x3e)
+0000: 58 2d 43 61 63 68 65 2d 4c 6f 6f 6b 75 70 3a 20 X-Cache-Lookup: 
+0010: 48 49 54 20 66 72 6f 6d 20 6d 61 72 6b 65 74 2d HIT from market-
+0020: 72 61 64 61 72 2d 65 78 70 65 72 69 6d 65 6e 74 radar-experiment
+0030: 73 2d 70 72 6f 78 79 3a 33 31 32 38 0d 0a       s-proxy:3128..
+<= Recv header, 28 bytes (0x1c)
+0000: 54 72 61 6e 73 66 65 72 2d 45 6e 63 6f 64 69 6e Transfer-Encodin
+0010: 67 3a 20 63 68 75 6e 6b 65 64 0d 0a             g: chunked..
+<= Recv header, 56 bytes (0x38)
+0000: 56 69 61 3a 20 31 2e 31 20 6d 61 72 6b 65 74 2d Via: 1.1 market-
+0010: 72 61 64 61 72 2d 65 78 70 65 72 69 6d 65 6e 74 radar-experiment
+0020: 73 2d 70 72 6f 78 79 20 28 73 71 75 69 64 2f 33 s-proxy (squid/3
+0030: 2e 35 2e 32 37 29 0d 0a                         .5.27)..
+<= Recv header, 24 bytes (0x18)
+0000: 43 6f 6e 6e 65 63 74 69 6f 6e 3a 20 6b 65 65 70 Connection: keep
+0010: 2d 61 6c 69 76 65 0d 0a                         -alive..
+<= Recv header, 2 bytes (0x2)
+0000: 0d 0a                                           ..
+<= Recv data, 8208 bytes (0x2010)
