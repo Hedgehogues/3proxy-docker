@@ -2,6 +2,8 @@
 
 [3proxy](https://github.com/z3apa3a/3proxy)
 
+**Notice**: If you want Ubuntu or another system, you have a problem with build
+
 3proxy is transpanent proxy server
 
 Befire installing, you nned update and upgrade system:
