@@ -87,65 +87,11 @@ No errors, continue.
 
     root@debian9:/home/joke/proxy# cat > 3proxy.conf
   
-`3proxy.conf`:
-
-> daemon
->
-> pidfile /home/joke/proxy/3proxy.pid
->
-> nserver 8.8.8.8
->
-> nscache 65536
->
-> users tester:CL:1234
->
-> timeouts 1 5 30 60 180 1800 16 60
->
-> log /home/joke/proxy/logs/3proxy.log D
->
-> logformat "- +_L%t.%. %N.%p %E %U %C:%c %R:%r %O %I %h %T"
->
-> rotate 3
->
-> auth strong
->
-> flush
->
-> allow tester
->
-> socks -p3128
->
-> proxy -p8080
+[3proxy_auth.conf](3proxy_auth.conf):
   
 If you want set no auth, you need another config (`auth none`):
 
-> daemon
->
-> pidfile /home/joke/proxy/3proxy.pid
->
-> nserver 8.8.8.8
->
-> nscache 65536
->
-> users tester:CL:1234
->
-> timeouts 1 5 30 60 180 1800 16 60
->
-> log /home/joke/proxy/logs/3proxy.log D
->
-> logformat "- +_L%t.%. %N.%p %E %U %C:%c %R:%r %O %I %h %T"
->
-> rotate 3
->
-> auth none
->
-> flush
->
-> allow tester
->
-> socks -p3128
->
-> proxy -p8080
+[3proxy.conf](3proxy.conf):
 
 To save, press **Ctrl + Z**
 
