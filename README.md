@@ -1,6 +1,6 @@
-# 3proxy-tutorial for Debian 9
+# 3proxy for Debian 9
 
-[3proxy](https://github.com/z3apa3a/3proxy)
+[3proxy](https://github.com/z3apa3a/3proxy) is transparent proxy
 
 # Start with docker
 
