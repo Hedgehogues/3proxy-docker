@@ -1,5 +1,7 @@
 # 3proxy-tutorial for Debian 9
 
+[3proxy](https://github.com/z3apa3a/3proxy)
+
 # Start with docker
 
 You can use clearly docker:
@@ -18,8 +20,6 @@ Or you can use docker-compose:
 After that, you can open *curl.log* and you can see like [log](curl.log)
 
 # Start without docker
-
-[3proxy](https://github.com/z3apa3a/3proxy)
 
 **Notice**: If you want Ubuntu or another system, you have a problem with build
 
