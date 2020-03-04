@@ -1,5 +1,24 @@
 # 3proxy-tutorial for Debian 9
 
+# Start with docker
+
+You can use clearly docker:
+
+    docker build . -t 3proxy
+    docker run -p 8080:8080 3proxy
+    
+Or you can use docker-compose:
+
+    docker-compose up
+    
+3proxy listening *8080* port. For test, you can use curl with trace:
+
+    curl -x 0.0.0.0:8080 yandex.ru --trace curl.log
+
+After that, you can open *curl.log* and you can see like [log](curl.log)
+
+# Start without docker
+
 [3proxy](https://github.com/z3apa3a/3proxy)
 
 **Notice**: If you want Ubuntu or another system, you have a problem with build
