@@ -1,5 +1,5 @@
 FROM debian:9 as BUILD
-RUN apt-get update && apt-get upgrade && apt-get install build-essential libevent-dev libssl-dev wget -y
+RUN apt-get update -y && apt-get upgrade -y && apt-get install build-essential libevent-dev libssl-dev wget -y
 RUN mkdir -p /opt/proxy
 WORKDIR /opt/proxy
 RUN wget https://github.com/z3APA3A/3proxy/archive/0.8.12.tar.gz
