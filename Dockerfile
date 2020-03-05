@@ -10,4 +10,5 @@ RUN make -f Makefile.Linux && make -f Makefile.Linux install
 RUN mkdir -p /home/joke/proxy/logs
 WORKDIR /home/joke/proxy/
 COPY . .
-ENTRYPOINT 3proxy /home/joke/proxy/3proxy.conf
+RUN chmod 755 entrypoint.sh
+ENTRYPOINT ["./entrypoint.sh"]
