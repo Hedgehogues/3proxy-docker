@@ -9,5 +9,5 @@ RUN head -n 28 src/proxy.h > src/_proxy.h && echo "#define ANONYMOUS 1" >> src/_
 RUN make -f Makefile.Linux && make -f Makefile.Linux install
 RUN mkdir -p /home/joke/proxy/logs
 WORKDIR /home/joke/proxy/
-WORKDIR cat > 3proxy.conf
+COPY . .
 ENTRYPOINT 3proxy /home/joke/proxy/3proxy.conf
