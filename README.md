@@ -21,6 +21,8 @@ After that, you can open *curl.log* and you can see like [log](curl.log)
 
 Another 3proxy [docker](https://github.com/riftbit/docker-3proxy)
 
+You will have a problem with ports.
+
 # Start without docker
 
 **Notice**: If you want Ubuntu or another system, you have a problem with build
